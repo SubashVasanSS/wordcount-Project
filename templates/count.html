@@ -1,0 +1,16 @@
+<h1>COUNT is {{ count }}</h1>
+
+<h1>Your text is</h1>
+{{ fulltext }}
+<br>
+
+<a href="{% url 'home'  %}">start with a new set of words</a>
+
+
+
+<h1>Counts are</h1>
+
+{% for words,counts in sortedwords   %}
+{{words}} : {{counts}} <br>
+
+{% endfor %}
